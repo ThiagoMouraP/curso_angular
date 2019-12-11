@@ -6,10 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PhotosModule } from './photos/photos.module';
 import { ErrorsModule } from './errors/errors.module';
+import { PhotosComponent } from './photos/photo-list/photos/photos.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
