@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PhotosModule } from './photos/photos.module';
 import { ErrorsModule } from './errors/errors.module';
 import { PhotosComponent } from './photos/photo-list/photos/photos.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler/src/core';
 
 
 @NgModule({
@@ -20,6 +21,9 @@ import { PhotosComponent } from './photos/photo-list/photos/photos.component';
     PhotosModule,
     ErrorsModule,
     HttpClientModule
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]
